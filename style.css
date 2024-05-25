@@ -1,0 +1,187 @@
+body {
+    background-image: url('images/Código\ 1\ \(1\).png');
+    background-size: cover;
+    background-position: relative;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 42, 42, 0.9); /* Ajuste a transparência aqui */
+    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
+}
+nav {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    top: 0;
+    
+    flex-wrap: wrap;
+}
+nav a, .redes a, .info a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover {
+    border-bottom: 2px #FF577F solid;
+}
+.navs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navs img {
+    margin-right: 10px;
+}
+section {
+    display: none;
+    padding: 60px 20px 20px;
+    color: white;
+    margin-top: 60px;
+}
+section.active {
+    display: block;
+}
+
+#home p, #habilidades p{
+    width: 600px;
+}
+.homeDiv, .habilidadesDiv{
+    display: flex;
+}
+.info h2 {
+    display: flex;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#acesso {
+    font-size: 20px;
+    font-weight: 700;
+}
+.rede {
+    display: flex;
+    align-items: center;
+    border: 1px #FF577F solid;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    
+}
+.rede img {
+    margin-right: 5px;
+    margin-left: 50px;
+}
+.Foto img, .imagemHabilidades img{
+    width: 300px;
+    border-radius: 40px;
+}
+.projetos {
+    display: flex;
+    margin-top:80px;
+    flex-wrap: wrap;
+}
+.projeto {
+    width: 30%;
+    margin-right: 40px;
+}
+footer {
+    border-top: 1px #FF577F solid;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    
+     footer {
+        padding: 15px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 10px 15px;
+    }
+    section {
+        padding: 80px 10px 10px;
+    }
+    
+    .projetos, .homeDiv, .habilidadesDiv {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        
+    }
+    body {
+        background-size:cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+@media (max-width: 880px) {
+   
+}
+@media (max-width: 480px) {
+   
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav a {
+        padding: 10px 10px;
+        font-size: 0.9em;
+    }
+    .homeDiv, .habilidadesDiv {
+        font-size: 16px;
+    }
+    .info {
+        width: 300px;
+        
+    }
+    .info p {
+        margin-left: -60px;
+        width: 50px;
+    }
+    .redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #habilidades .info a {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rede img {
+        margin-right: 70px;
+    }
+    .projetos {
+        margin-left: -170px;
+    }
+}
